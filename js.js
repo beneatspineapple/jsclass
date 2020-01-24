@@ -112,14 +112,14 @@
 
 
 
-let service = 'credit card';
-let month = 'May 30th';
-let displayText = 'Your ' + service + ' bill is due on ' + month + '.';
-// Gluing strings together is concatenating (+)
-
-console.log(displayText);
-// output: Your credit card bill is due on May 30th.
-//====================================================
+// let service = 'credit card';
+// let month = 'May 30th';
+// let displayText = 'Your ' + service + ' bill is due on ' + month + '.';
+// // Gluing strings together is concatenating (+)
+//
+// console.log(displayText);
+// // output: Your credit card bill is due on May 30th.
+// //====================================================
 
 
 
@@ -131,8 +131,8 @@ console.log(displayText);
 // let userIncome = 85000;
 //
 // console.log(incomeCurrency + userIncome + ' is more than the average income.');
-// // Prints: $85000 is more than the average income.
-//====================================================
+// Prints: $85000 is more than the average income.
+// ====================================================
 
 
 
