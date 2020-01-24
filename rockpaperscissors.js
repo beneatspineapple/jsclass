@@ -4,6 +4,8 @@ let userInputtedRPSString = prompt("type your choice: rock, paper, or scissors")
 
 // create a variable to store a random number from 1 to 100
 let randomFloatingPointNumber = Math.random() * 100;
+
+// a variable to hold a string representing the computer opponents choice
 let computersChoice = '';
 // =========== leave above section for now ============
 
