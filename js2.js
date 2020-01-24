@@ -6,7 +6,7 @@ let isWednesday = true;
 let gettingOutEarly = false;
 
 // integer data type variables
-let myAge = 55;
+let myAge = 25;
 
 // string data type
 let myBossesName = 'Sam';
@@ -54,8 +54,10 @@ if (!raining2) {
 
 if (myAge > 37) {
   console.log ("You are old!");
- } else {
+ } else if (myAge < 37) {
   console.log ("you're still young");
+} else {
+  console.log ("you're 37")
 }
 
 // if (age < 37) {
