@@ -11,6 +11,14 @@ let computersChoice = '';
 
 
 // =========== start of exercises ============
+if (randomFloatingPointNumber < 33) {
+console.log("rock")
+} else if (randomFloatingPointNumber > 34 && randomFloatingPointNumber< 67){
+console.log("paper")
+}else if (randomFloatingPointNumber > 67) {
+console.log("scissors")
+}
+
 // exercise 1:
 // create an if / else if / else statement to handle the following 3 different cases:
 // when randomFloatingPointNumber is between 1-33,
