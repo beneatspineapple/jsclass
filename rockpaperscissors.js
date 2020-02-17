@@ -6,20 +6,20 @@ let userInputtedRPSString = prompt("type your choice: rock, paper, or scissors")
 let randomFloatingPointNumber = Math.random() * 100;
 
 // a variable to hold a string representing the computer opponents choice
-// let computersChoice = '';
+let computersChoice = '';
 // =========== leave above section for now ============
 
 
 // =========== start of exercises ============
 if (randomFloatingPointNumber < 33) {
-var computersChoice = 'rock'
-// console.log("rock")
+computersChoice = 'rock';
+console.log("rock")
 } else if (randomFloatingPointNumber > 34 && randomFloatingPointNumber< 67){
-var computersChoice = 'paper'
-// console.log("paper")
+computersChoice = 'paper';
+console.log("paper")
 }else if (randomFloatingPointNumber > 67) {
-var computersChoice = 'scissors'
-// console.log("scissors")
+computersChoice = 'scissors';
+console.log("scissors")
 }
 
 // exercise 1:
