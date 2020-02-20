@@ -1,3 +1,6 @@
+/*
+* "initial setting-things-up" section
+*/
 // =========== leave the below section for now ============
 // prompt the user for input, and store their response value into another variable
 let userInputtedRPSString = prompt("type your choice: rock, paper, or scissors");
@@ -16,24 +19,31 @@ let randomFloatingPointNumber = Math.random() * 100;
 let computersChoice = '';
 // =========== leave above section for now ============
 
-// =========== start of exercises ============
+/*
+* "Computer's choice" section
+*/
 if (randomFloatingPointNumber < 33) {
   computersChoice = 'rock';
-  if (userInputtedRPSString = 'scissors') {
-    console.log("user loses")
-  }
-  if (userInputtedRPSString = 'rock') {
-    console.log('tie')
-  }
-  console.log("rock")
-} else if (randomFloatingPointNumber > 34 && randomFloatingPointNumber < 67) {
+  console.log("computer chose rock");
+}
+else if (randomFloatingPointNumber > 34 && randomFloatingPointNumber < 67) {
   computersChoice = 'paper';
-  console.log("paper")
-} else if (randomFloatingPointNumber > 67) {
+  console.log("computer chose paper");
+}
+else if (randomFloatingPointNumber > 67) {
   computersChoice = 'scissors';
-  console.log("scissors")
+  console.log("computer chose scissors");
 }
 
+/*
+* "see who won" section
+*/
+// if (userInputtedRPSString = 'scissors') {
+//   console.log("user loses");
+// }
+// if (userInputtedRPSString = 'rock') {
+//   console.log('tie');
+// }
 
 // exercise 1:
 // create an if / else if / else statement to handle the following 3 different cases:
