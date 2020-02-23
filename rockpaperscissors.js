@@ -5,13 +5,6 @@
 // prompt the user for input, and store their response value into another variable
 let userInputtedRPSString = prompt("type your choice: rock, paper, or scissors");
 
-if (userInputtedRPSString === 'rock') {
-  alert('user chose rock');
-} else if (userInputtedRPSString === 'scissors') {
-  alert('user chose scissors');
-} else if (userInputtedRPSString === 'paper') {
-  alert('user chose paper');
-}
 // create a variable to store a random number from 1 to 100
 let randomFloatingPointNumber = Math.random() * 100;
 
