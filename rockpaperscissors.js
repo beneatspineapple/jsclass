@@ -47,25 +47,25 @@ else if (randomFloatingPointNumber > 67) {
  if (computersChoice == 'rock' && userInputtedRPSString == 'rock') {
    console.log("tie");
  } else if (computersChoice == 'rock' && userInputtedRPSString == 'scissors') {
-   console.log("computer wins")
+   console.log("computer wins");
  } else if (computersChoice == 'rock' && userInputtedRPSString == 'paper') {
-   console.log("user wins")
+   console.log("user wins");
  }
 
  if (computersChoice == 'scissors' && userInputtedRPSString == 'scissors') {
    console.log("tie");
  } else if (computersChoice == 'scissors' && userInputtedRPSString == 'paper') {
-   console.log("computer wins")
+   console.log("computer wins");
  } else if (computersChoice == 'scissors' && userInputtedRPSString == 'rock') {
-   console.log("user wins")
+   console.log("user wins");
  }
 
  if (computersChoice == 'paper' && userInputtedRPSString == 'paper') {
    console.log("tie");
  } else if (computersChoice == 'paper' && userInputtedRPSString == 'rock') {
-   console.log("computer wins")
+   console.log("computer wins");
  } else if (computersChoice == 'paper' && userInputtedRPSString == 'scissors') {
-   console.log("user wins")
+   console.log("user wins");
  }
 // if (computersChoice == 'rock') {
 // if (userInputtedRPSString == 'scissors');
