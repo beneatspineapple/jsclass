@@ -38,12 +38,47 @@ else if (randomFloatingPointNumber > 67) {
 /*
 * "see who won" section
 */
-// if (userInputtedRPSString = 'scissors') {
-//   console.log("user loses");
+ // if (userInputtedRPSString == 'scissors') {
+ //   console.log("user loses");
+ // }
+ // if (userInputtedRPSString == 'rock') {
+ //   console.log('tie');
+ // }
+ if (computersChoice == 'rock' && userInputtedRPSString == 'rock') {
+   console.log("tie");
+ } else if (computersChoice == 'rock' && userInputtedRPSString == 'scissors') {
+   console.log("computer wins")
+ } else if (computersChoice == 'rock' && userInputtedRPSString == 'paper') {
+   console.log("user wins")
+ }
+
+ if (computersChoice == 'scissors' && userInputtedRPSString == 'scissors') {
+   console.log("tie");
+ } else if (computersChoice == 'scissors' && userInputtedRPSString == 'paper') {
+   console.log("computer wins")
+ } else if (computersChoice == 'scissors' && userInputtedRPSString == 'rock') {
+   console.log("user wins")
+ }
+
+ if (computersChoice == 'paper' && userInputtedRPSString == 'paper') {
+   console.log("tie");
+ } else if (computersChoice == 'paper' && userInputtedRPSString == 'rock') {
+   console.log("computer wins")
+ } else if (computersChoice == 'paper' && userInputtedRPSString == 'scissors') {
+   console.log("user wins")
+ }
+// if (computersChoice == 'rock') {
+// if (userInputtedRPSString == 'scissors');
+// console.log("computer wins");
 // }
-// if (userInputtedRPSString = 'rock') {
-//   console.log('tie');
+// else if (userInputtedRPSString == 'scissors') {
+// console.log("computer wins");
 // }
+
+
+
+
+
 
 // exercise 1:
 // create an if / else if / else statement to handle the following 3 different cases:
