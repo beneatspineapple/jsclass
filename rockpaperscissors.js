@@ -41,20 +41,25 @@ if (computersChoice == 'rock') {
 
   if (userInputtedRPSString == 'rock') {
     console.log("tie");
-  } else if (userInputtedRPSString == 'scissors') {
+  }
+  else if (userInputtedRPSString == 'scissors') {
     console.log("computer wins");
-  } else if (userInputtedRPSString == 'paper') {
+  }
+  else if (userInputtedRPSString == 'paper') {
     console.log("user wins");
   }
-}
+
+}//end of computer chose "rock" case.
 
 
 // computer chose "scissors" case:
 if (computersChoice == 'scissors' && userInputtedRPSString == 'scissors') {
   console.log("tie");
-} else if (computersChoice == 'scissors' && userInputtedRPSString == 'paper') {
+}
+else if (computersChoice == 'scissors' && userInputtedRPSString == 'paper') {
   console.log("computer wins");
-} else if (computersChoice == 'scissors' && userInputtedRPSString == 'rock') {
+}
+else if (computersChoice == 'scissors' && userInputtedRPSString == 'rock') {
   console.log("user wins");
 }
 
@@ -62,8 +67,10 @@ if (computersChoice == 'scissors' && userInputtedRPSString == 'scissors') {
 // computer chose "paper" case:
 if (computersChoice == 'paper' && userInputtedRPSString == 'paper') {
   console.log("tie");
-} else if (computersChoice == 'paper' && userInputtedRPSString == 'rock') {
+}
+else if (computersChoice == 'paper' && userInputtedRPSString == 'rock') {
   console.log("computer wins");
-} else if (computersChoice == 'paper' && userInputtedRPSString == 'scissors') {
+}
+else if (computersChoice == 'paper' && userInputtedRPSString == 'scissors') {
   console.log("user wins");
 }
