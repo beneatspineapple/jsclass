@@ -11,27 +11,32 @@ let randomFloatingPointNumber = Math.random() * 100;
 // a variable to hold a string representing the computer opponents choice
 let computersChoice = '';
 // =========== leave above section for now ============
-let userWonTheGame = false;
+
 /*
- * "Computer's choice" section
+ * "declare and initialize the variables we need" section:
+ */
+let userWonTheGame = false;
+
+/*
+ * "Computer's choice" section:
  */
 if (randomFloatingPointNumber < 33) {
   computersChoice = 'rock';
   console.log("computer chose rock");
-} else if (randomFloatingPointNumber > 34 && randomFloatingPointNumber < 67) {
+}
+else if (randomFloatingPointNumber > 34 && randomFloatingPointNumber < 67) {
   computersChoice = 'paper';
   console.log("computer chose paper");
-} else if (randomFloatingPointNumber > 67) {
+}
+else if (randomFloatingPointNumber > 67) {
   computersChoice = 'scissors';
   console.log("computer chose scissors");
 }
 
 /*
- * "see who won" section
+ * "see who won" section:
  */
 // computer chose "rock" case:
-// if (computersChoice == 'rock') {
-// let userWonTheGame == false;
 if (computersChoice == 'rock') {
   if (userInputtedRPSString == 'rock') {
     // console.log("tie");
@@ -42,7 +47,7 @@ if (computersChoice == 'rock') {
   }
   else if (userInputtedRPSString == 'paper') {
     // console.log("user wins");
-userWonTheGame = true;
+    userWonTheGame = true;
   }
 
 }//end of computer chose "rock" case.
@@ -51,14 +56,14 @@ userWonTheGame = true;
 // computer chose "scissors" case:
 if (computersChoice == 'scissors') {
   if (userInputtedRPSString == 'scissors') {
-      // console.log("tie");
+    // console.log("tie");
   }
   else if (userInputtedRPSString == 'paper') {
-      // console.log("computer wins");
+    // console.log("computer wins");
   }
   else if (userInputtedRPSString == 'rock') {
-      // console.log("user wins");
-userWonTheGame = true;
+    // console.log("user wins");
+    userWonTheGame = true;
   }
 
 }//end of computer chose "scissors" case.
@@ -66,14 +71,14 @@ userWonTheGame = true;
 // computer chose "paper" case:
 if (computersChoice == 'paper') {
   if (userInputtedRPSString == 'paper') {
-      // console.log("tie");
+    // console.log("tie");
   }
   else if (userInputtedRPSString == 'rock') {
-      // console.log("computer wins");
+    // console.log("computer wins");
   }
   else if (userInputtedRPSString == 'scissors') {
-      // console.log("user wins");
-userWonTheGame = true;
+    // console.log("user wins");
+    userWonTheGame = true;
   }
 
 }//end of computer chose "paper" case.
