@@ -23,15 +23,12 @@ let userTiedTheGame = false;
  */
 if (randomFloatingPointNumber < 33) {
   computersChoice = 'rock';
-  console.log("computer chose rock");
 }
 else if (randomFloatingPointNumber > 34 && randomFloatingPointNumber < 67) {
   computersChoice = 'paper';
-  console.log("computer chose paper");
 }
 else if (randomFloatingPointNumber > 67) {
   computersChoice = 'scissors';
-  console.log("computer chose scissors");
 }
 
 /*
@@ -43,53 +40,39 @@ if (computersChoice == 'rock') {
     // console.log("tie");
     userTiedTheGame = true;
   }
-  // else if (userInputtedRPSString == 'scissors') {
-  //   // console.log("computer wins");
-
-  // }
   else if (userInputtedRPSString == 'paper') {
     // console.log("user wins");
     userWonTheGame = true;
   }
-
-}//end of computer chose "rock" case.
-
+}
 
 // computer chose "scissors" case:
 if (computersChoice == 'scissors') {
   if (userInputtedRPSString == 'scissors') {
-    // console.log("tie");
     userTiedTheGame = true;
   }
-  // else if (userInputtedRPSString == 'paper') {
-  //   // console.log("computer wins");
-  // }
   else if (userInputtedRPSString == 'rock') {
     // console.log("user wins");
     userWonTheGame = true;
   }
-
-}//end of computer chose "scissors" case.
+}
 
 // computer chose "paper" case:
 if (computersChoice == 'paper') {
   if (userInputtedRPSString == 'paper') {
-    // console.log("tie");
     userTiedTheGame = true;
   }
-  // else if (userInputtedRPSString == 'rock') {
-  //   // console.log("computer wins");
-  // }
   else if (userInputtedRPSString == 'scissors') {
-    // console.log("user wins");
     userWonTheGame = true;
   }
+}
 
-}//end of computer chose "paper" case.
 if (userWonTheGame == true) {
-console.log( "You won!: "+ userWonTheGame );
-} else if (userWonTheGame == false) {
-console.log( "You lost!: "+ userWonTheGame );
-} else if (userTiedTheGame == true) {
-console.log( "Tie: "+ userTiedTheGame );
+  console.log( "You won!: "+ userWonTheGame );
+}
+else if (userWonTheGame == false) {
+  console.log( "You lost!: "+ userWonTheGame );
+}
+else if (userTiedTheGame == true) {
+  console.log( "Tie: "+ userTiedTheGame );
 }
