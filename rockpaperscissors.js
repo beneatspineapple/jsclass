@@ -73,6 +73,6 @@ if (userWonTheGame == true) {
 else if (userWonTheGame == false) {
   console.log( "You lost!: "+ userWonTheGame );
 }
-else if (userTiedTheGame == true) {
+if (userTiedTheGame == true) {
   console.log( "Tie: "+ userTiedTheGame );
 }
