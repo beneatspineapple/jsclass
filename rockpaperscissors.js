@@ -1,3 +1,5 @@
+function playRPS(){
+
 /*
  * "initial setting-things-up" section
  */
@@ -76,3 +78,6 @@ else if (userWonTheGame == false) {
 if (userTiedTheGame == true) {
   console.log( "Tie: "+ userTiedTheGame );
 }
+
+}
+playRPS();
