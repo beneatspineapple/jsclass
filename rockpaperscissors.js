@@ -1,4 +1,8 @@
+function playNGamesOfRPS(){for (let i = 0; i < 5; i++) {playRPS();
+}}
+
 function playRPS(){
+
 
   /*
    * "initial setting-things-up" section
@@ -79,4 +83,3 @@ function playRPS(){
     console.log( "Tie: "+ userTiedTheGame );
   }
 }
-
