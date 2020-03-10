@@ -1,4 +1,4 @@
-function playNGamesOfRPS(){for (let i = 0; i < 5; i++) {playRPS();
+function playNGamesOfRPS(numOfGame){for (let i = 0; i < numOfGame; i++) {playRPS();
 }}
 
 function playRPS(){
