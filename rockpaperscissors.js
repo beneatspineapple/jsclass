@@ -58,7 +58,7 @@ function user1RPSGameResult(player1choice, player2choice){
             // console.log("tie");
             player1TiedTheGame = true;
         }
-        else if (player2choice == 'paper') {
+        else if (player2choice == 'scissors') {
             // console.log("user wins");
             player1WonTheGame = true;
         }
@@ -69,7 +69,7 @@ function user1RPSGameResult(player1choice, player2choice){
         if (player2choice == 'scissors') {
             player1TiedTheGame = true;
         }
-        else if (player2choice == 'rock') {
+        else if (player2choice == 'paper') {
             // console.log("user wins");
             player1WonTheGame = true;
         }
@@ -80,7 +80,7 @@ function user1RPSGameResult(player1choice, player2choice){
         if (player2choice == 'paper') {
             player1TiedTheGame = true;
         }
-        else if (player2choice == 'scissors') {
+        else if (player2choice == 'rock') {
             player1WonTheGame = true;
         }
     }
