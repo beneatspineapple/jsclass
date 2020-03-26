@@ -1,7 +1,29 @@
 function playNGamesOfRPS(numOfGame){
+    let combinedResults = [0,0,0];
+    let singleGameResults = [];
     for (let i = 0; i < numOfGame; i++) { //++ is increment operator (natural counting, add one)
-        playRPS();
+        singleGameResults = playRPS();
+        combinedResults[0] += singleGameResults[0];
+        combinedResults[1] += singleGameResults[1];
+        combinedResults[2] += singleGameResults[2];
     }
+console.log("here is the combined results" + combinedResults);
+}
+
+function playRPS(){
+    // prompt the user for input, and store their response value into another variable
+    // let userInputtedRPSString = prompt("type your choice: rock, paper, or scissors");
+    let userInputtedRPSString = chooseRPOrS();
+    // a variable to hold a string representing the computer opponents choice
+    let computersChoice = chooseRPOrS();
+
+
+    /*
+    * "see who won" section:
+    */
+    let resultArray = user1RPSGameResult(userInputtedRPSString, computersChoice);
+    // console.log("the resulting array of the game is: "+resultArray);
+    return resultArray;
 }
 
 function chooseRPOrS(){
@@ -50,7 +72,7 @@ function user1RPSGameResult(player1choice, player2choice){
     let player1TiedTheGame = false;
 
     // debug our function inputs:
-    console.log("user1RPSGameResult function entered with p1: "+player1choice+" vs. p2: "+player2choice);
+    // console.log("user1RPSGameResult function entered with p1: "+player1choice+" vs. p2: "+player2choice);
 
     // player1choice chose "rock" case:
     if (player1choice == 'rock') { // this is called a boolean expression inside the parentheses because it always evaluates to true or false
@@ -88,32 +110,17 @@ function user1RPSGameResult(player1choice, player2choice){
     //TODO:
     // Implement array exercise here in these if-cases to return the correct gameResults array
     if (player1WonTheGame == true) {
-        console.log( "player1 won! " );
+        // set gameResults equal to the winning array
+        gameResults = [1,0,0];
     }
     else if (player1WonTheGame == false) {
-        console.log( "player 1 lost! " );
+        gameResults = [0,1,0];
     }
 
     if (player1TiedTheGame == true) {
-        console.log( "Tie! " );
+        gameResults = [0,0,1];
     }
 
 
     return gameResults;
-}
-
-function playRPS(){
-    // prompt the user for input, and store their response value into another variable
-    let userInputtedRPSString = prompt("type your choice: rock, paper, or scissors");
-
-    // a variable to hold a string representing the computer opponents choice
-    let computersChoice = chooseRPOrS();
-
-
-    /*
-    * "see who won" section:
-    */
-    let resultArray = user1RPSGameResult(userInputtedRPSString, computersChoice);
-    console.log("resultArray is: "+resultArray);
-
 }
